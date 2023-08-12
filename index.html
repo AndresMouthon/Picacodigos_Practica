@@ -159,5 +159,83 @@
             <td>Mandosed</td>
         </tr>
     </table>
+    <h3>FOTMULARIOS</h3>
+    <form action="https://www.google.com/?hl=es" method="get" target="_blank">
+        <tr>
+            <label for="nombre">Nombre</label>
+            <input type="text" name = "nombre" placeholder="Ingrese el nombre......">
+        </tr>
+    </form><br>
+    <h3>FORMULARIO DENTRO DE UNA TABLA</h3>
+    <!--Method = get (Enviamos toda la informacion por medio de la URL)
+        Method = post(Enviamos la informacion como contenido de mensaje y no se ve por la URL)-->
+    <form action="https://www.google.com/?hl=es" method="get" target="_blank">
+        <table border="1">
+            <tr>
+                <th>
+                    <label for="nombre">Nombre: </label>
+                </th>
+                <td>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre....">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="apellido">Apellido: </label>
+                </th>
+                <td>
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido......">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="edad">Edad: </label>
+                </th>
+                <td>
+                    <input type="number" name="edad">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+                </th>
+                <td>
+                    <input type="date" name="fecha_nacimiento" placeholder="Ingrese su fecha de nacimiento.....">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="color_favorito">Color favorito: </label>
+                </th>
+                <td>
+                    <input type="color" name="color_favorito" placeholder="Ingrese su color favorito....">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="ciudades">Ciudad: </label>
+                </th>
+                <td>
+                    <select name="ciudades" id="ciudades">
+                        <option value="1">Chima</option>
+                        <option value="2">Bucaramanga</option>
+                        <option value="3">Cali</option>
+                        <option value="4">Monteria</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" align="center">
+                    <!--Ambos sirven como botones para enviar la informacion-->
+                    <button>Guardar</button>
+                    <input type="submit" value="Guardar">
+                    <!--Limpiar todas las cajas de input que contengan informacion-->
+                    <input type="reset" value="Limpiar">
+                    <!--Espera a que le digamos que hacer con el, usualmente se le ponen acciones con js-->
+                    <input type="button" value="Otra accion">
+                </th>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
