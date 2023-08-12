@@ -52,10 +52,34 @@
                     </tr>
                     <tr>
                         <th>
-                            <label for="color">Digite su color favorito: </label>
+                            <label for="email">Digite su correo electronico: </label>
                         </th>
                         <td>
-                            <input type="color" class="form-control" name="color" id="color">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="clave">Digite su contraseña: </label>
+                        </th>
+                        <td>
+                            <input type="password" class="form-control" name="clave" id="clave" placeholder="Contraseña...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="url">Digite la ruta de su pagina: </label>
+                        </th>
+                        <td>
+                            <input type="url" class="form-control" name="url" id="url" placeholder="Ruta de la pagina...">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="buscar_lenguaje">Que lenguaje de programacion desea buscar: </label>
+                        </th>
+                        <td>
+                            <input type="search" class="form-control" name="buscar_lenguaje" id="buscar_lenguaje" placeholder="Lenguaje de programacion...">
                         </td>
                     </tr>
                     <tr>
@@ -79,6 +103,19 @@
                     </tr>
                     <tr>
                         <th>
+                            <label>Seleccione el tipo de documento: </label>
+                        </th>
+                        <td>&nbsp;
+                            <input type="radio" name="cc" id="cc" value="CC">
+                            <label for="cc">Cedula de ciudadania</label>&nbsp;
+                            <input type="radio" name="ti" id="ti" value="TI">
+                            <label for="ti">Tarjeta de identidad</label>&nbsp;
+                            <input type="radio" name="ot" id="ot" value="OT">
+                            <label for="ot">Otros</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             <label for="fecha_nacimiento">Fecha de nacimiento: </label>
                         </th>
                         <td>
@@ -95,30 +132,6 @@
                     </tr>
                     <tr>
                         <th>
-                            <label for="email">Digite su correo electronico: </label>
-                        </th>
-                        <td>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico...">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="archivo">Subir scanner del documento de identidad: </label>
-                        </th>
-                        <td>
-                            <input type="file" class="form-control" name="archivo" id="archivo">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="campo_oculto">Campo oculto tipo hidden: </label>
-                        </th>
-                        <td>
-                            <input type="hidden" name="campo_oculto" value="Hola">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
                             <label for="mes_nacimiento">Digite su mes de nacimiento</label>
                         </th>
                         <td>
@@ -127,39 +140,10 @@
                     </tr>
                     <tr>
                         <th>
-                            <label for="clave">Digite su contraseña: </label>
+                            <label for="semanas_clase">Digite las semanas de clase: </label>
                         </th>
                         <td>
-                            <input type="password" class="form-control" name="clave" id="clave" placeholder="Contraseña...">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label>Seleccione el tipo de documento: </label>
-                        </th>
-                        <td>
-                            <input type="radio" name="cc" id="cc" value="CC">
-                            <label for="cc">Cedula de ciudadania</label>&nbsp;
-                            <input type="radio" name="ti" id="ti" value="TI">
-                            <label for="ti">Tarjeta de identidad</label>&nbsp;
-                            <input type="radio" name="ot" id="ot" value="OT">
-                            <label for="ot">Otros</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="promedio_edad">Volumen (0 min y 50max): </label>
-                        </th>
-                        <td>
-                            <input type="range" class="form-control" name="promedio_edad" id="promedio_edad" min="0" max="50">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="buscar_lenguaje">Que lenguaje de programacion desea buscar: </label>
-                        </th>
-                        <td>
-                            <input type="search" class="form-control" name="buscar_lenguaje" id="buscar_lenguaje" placeholder="Lenguaje de programacion...">
+                            <input type="week" class="form-control" name="semanas_clase" id="semanas_clase">
                         </td>
                     </tr>
                     <tr>
@@ -172,18 +156,34 @@
                     </tr>
                     <tr>
                         <th>
-                            <label for="url">Digite la ruta de su pagina: </label>
+                            <label for="archivo">Subir scanner del documento de identidad: </label>
                         </th>
                         <td>
-                            <input type="url" class="form-control" name="url" id="url" placeholder="Ruta de la pagina...">
+                            <input type="file" class="form-control" name="archivo" id="archivo">
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <label for="semanas_clase">Digite las semanas de clase: </label>
+                            <label for="promedio_edad">Volumen (0 min y 50max): </label>
                         </th>
                         <td>
-                            <input type="week" class="form-control" name="semanas_clase" id="semanas_clase">
+                            <input type="range" class="form-control" name="promedio_edad" id="promedio_edad" min="0" max="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="color">Digite su color favorito: </label>
+                        </th>
+                        <td>
+                            <input type="color" class="form-control" name="color" id="color">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="campo_oculto">Campo oculto tipo hidden: </label>
+                        </th>
+                        <td>
+                            <input type="hidden" name="campo_oculto" value="Hola">
                         </td>
                     </tr>
                     <tr>
@@ -201,6 +201,5 @@
 <style>
     body { 
         background: rgb(104, 167, 248);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 </style>
